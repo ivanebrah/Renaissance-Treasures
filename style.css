@@ -1,0 +1,745 @@
+/* Base styling for all div elements */
+div {
+    padding: 15px; /* Adds padding inside div elements */
+}
+
+/* Styling for h1 elements (main headings) */
+h1 {
+    color: rgb(6, 0, 39); /* Sets the color of the text */
+}
+
+/* Styling for the nav element (navigation bar) */
+nav {
+    background-color: none; /* No background color specified */
+    padding: 2px; /* Adds padding inside the navigation bar */
+    margin-bottom: 2px; /* Adds margin below the navigation bar */
+    font-size: 22px; /* Sets the font size */
+}
+
+/* Styling for unordered list (links) */
+ul {
+    list-style-type: none; /* Removes the default bullet points */
+}
+
+/* Styling for list items */
+li {
+    padding: 7px; /* Adds padding inside list items */
+    margin: 7px; /* Adds margin outside list items */
+}
+
+/* Styling for anchor (link) elements */
+a {
+    color: rgb(8, 49, 254); /* Sets the color of the links */
+}
+
+/* Hover effect for links */
+a:hover {
+    color: rgb(1, 0, 3); /* Changes color when hovered over */
+}
+
+/* Styling for the flex container */
+.flex-container {
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Distributes space evenly between items */
+}
+
+/* Styling for label elements */
+.label {
+    padding: 0px; /* No padding */
+    margin: 0px; /* No margin */
+    color: blue; /* Sets the color of the text */
+}
+
+/* Styling for input elements */
+.input {
+    padding: 0px; /* No padding */
+    margin: 10px; /* Adds margin outside input elements */
+    border-style: dotted; /* Sets the border style to dotted */
+}
+
+/* Styling for specific input types and textarea */
+input[type="text"], input[type="email"], textarea {
+    padding: 10px; /* Adds padding inside the elements */
+    margin: 5px 0; /* Adds vertical margin */
+    border: 2px solid #f28909; /* Sets the border color and width */
+    border-radius: 25px; /* Rounds the corners */
+    font-size: 22px; /* Sets the font size */
+}
+
+/* Styling for submit button */
+input[type="submit"] {
+    background-color: rgb(104, 183, 253); /* Sets the background color */
+    color: rgb(0, 0, 0); /* Sets the text color */
+    padding: 10px 20px; /* Adds padding inside the button */
+    border: none; /* Removes the border */
+    border-radius: 4px; /* Rounds the corners */
+    cursor: pointer; /* Changes cursor to pointer */
+    font-size: 18px; /* Sets the font size */
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #f2d309; /* Changes background color when hovered over */
+}
+
+/* Media query for tablet screens and smaller */
+@media (max-width: 768px) {
+    nav {
+        font-size: 18px; /* Sets the font size for navigation */
+    }
+    ul {
+        flex-direction: column; /* Stacks the list items vertically */
+        padding: 0; /* No padding */
+    }
+    li {
+        padding: 5px; /* Adjusts padding inside list items */
+        margin: 5px; /* Adjusts margin outside list items */
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 100%; /* Sets width to 100% of the container */
+        margin: 10px 0; /* Adds vertical margin */
+    }
+    input[type="submit"] {
+        width: 100%; /* Sets width to 100% of the container */
+    }
+}
+
+
+/* Styles for mobile screens */ 
+@media (max-width: 480px) {
+    /* Navigation bar styles */
+    nav {
+        font-size: 18px; /* Adjust font size */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    ul {
+        flex-direction: column; /* Stack list items vertically */
+    }
+    li {
+        margin: 3px; /* Adjust margin */
+        padding: 3px; /* Adjust padding */
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 100%; /* Full width for inputs and textarea */
+        margin: 8px 0; /* Adjust vertical margin */
+    }
+    input[type="submit"] {
+        width: 100px; /* Set width for submit button */
+    }
+}
+
+/* Grid container styles */
+.grid-container {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Responsive columns */
+    gap: 23px; /* Gap between grid items */
+    padding: 20px; /* Padding around grid container */
+}
+
+/* Style for grid items on Gallery Page */
+.grid-item {
+    background-color: #a66f45; /* Background color */
+    padding: 10px; /* Padding inside grid item */
+    border: 60px solid #534f4f; /* Border with color and width */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+
+/* Paragraph and bold text color within grid items */
+.grid-item p, .grid-item b {
+    color: #f8eaea; /* Change this to your desired color */
+}
+
+/* Image styles within grid items */
+.grid-item img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 19px; /* Rounded corners */
+}
+
+/* Grid container for Index(Home) Page */
+.grid-container2 {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Responsive columns */
+    gap: 23px; /* Gap between grid items */
+    padding: 20px; /* Padding around grid container */
+}
+
+/* Paragraph and bold text color within grid items on Index(Home) Page */
+.grid-item2 p, .grid-item2 b {
+    color: #e1e1e1; /* Change this to your desired color */
+}
+
+/* Style for grid items on Index(Home) Page */
+.grid-item2 {
+    background-color: #b9804e; /* Background color */
+    padding: 10px; /* Padding inside grid item */
+    border: 10px solid #395c40; /* Border with color and width */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+
+/* Image styles within grid items on Index(Home) Page */
+.grid-item2 img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 19px; /* Rounded corners */
+}
+
+/* Grid container for about Page */
+.grid-container3 {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Responsive columns */
+    gap: 23px; /* Gap between grid items */
+    padding: 20px; /* Padding around grid container */
+}
+
+/* Paragraph and bold text color within grid items */
+.grid-item3 p, .grid-item3 b {
+    color: #e1e1e1; /* Change this to your desired color */
+}
+
+/* Style for grid items on about Page */
+.grid-item3 {
+    background-color: #626262; /* Background color */
+    padding: 10px; /* Padding inside grid item */
+    border: 10px solid #593232; /* Border with color and width */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+
+/* Image styles within grid items on about Page */
+.grid-item3 img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 19px; /* Rounded corners */
+}
+
+/* Grid container for art Page */
+.grid-container4 {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Responsive columns */
+    gap: 23px; /* Gap between grid items */
+    padding: 20px; /* Padding around grid container */
+}
+
+/* Style for grid items on art Page */
+.grid-item9 {
+    background-color: #c07e7e; /* Background color */
+    padding: 10px; /* Padding inside grid item */
+    border: 10px solid #f9e0a5; /* Border with color and width */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+
+/* Image styles within grid items on art Page */
+.grid-item4 img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 19px; /* Rounded corners */
+}
+
+/* Grid container for science Page */
+.grid-container5 {
+    display: grid; /* Use CSS grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Responsive columns */
+    gap: 23px; /* Gap between grid items */
+    padding: 20px; /* Padding around grid container */
+}
+
+/* Style for grid items on science Page */
+.grid-item5 {
+    background-color: #605248; /* Background color */
+    padding: 10px; /* Padding inside grid item */
+    border: 11px solid #272525; /* Border with color and width */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+
+/* Paragraph and bold text color within grid items */
+.grid-item5 p, .grid-item5 b {
+    color: #e1e1e1; /* Change this to your desired color */
+}
+
+/* Image styles within grid items on science Page */
+.grid-item5 img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 19px; /* Rounded corners */
+}
+
+
+
+/* Slideshow container styles */
+.slideshow-container {
+    position: relative; /* Position relative to parent */
+    max-width: 100%; /* Maximum width of 100% */
+    margin: auto; /* Center the container */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Each slide */
+.mySlides {
+    display: none; /* Hide slides by default */
+}
+
+/* Slideshow images */
+.slide-image {
+    width: 100%; /* Full width image */
+    vertical-align: middle; /* Align images vertically */
+}
+
+/* Navigation arrows */
+.prev, .next {
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Position absolutely within the container */
+    top: 50%; /* Align arrows vertically */
+    width: auto; /* Auto width */
+    padding: 16px; /* Padding inside the arrows */
+    margin-top: -22px; /* Negative margin to center vertically */
+    color: rgb(7, 152, 236); /* Text color */
+    font-weight: bold; /* Bold text */
+    font-size: 18px; /* Font size */
+    transition: 0.06s ease; /* Transition effect */
+    border-radius: 0 3px 3px 0; /* Rounded corners */
+    user-select: none; /* Disable text selection */
+}
+
+/* Position the next arrow */
+.next {
+    right: 0; /* Position on the right */
+    border-radius: 3px 0 0 3px; /* Rounded corners */
+}
+
+/* Hover effect for arrows */
+.prev:hover, .next:hover {
+    background-color: none; /* Change background color */
+}
+
+
+
+/* Ensure the body and html have no margin or padding */
+body, html {
+    margin: 0px; /* Remove margin */
+    padding: 0px; /* Remove padding */
+}
+
+/* Ensure the navigation bar has no margin or padding */
+nav {
+    margin: 0px; /* Remove margin */
+    padding: 0px; /* Remove padding */
+    width: 100%; /* Full width */
+}
+
+/* Fixed navigation bar styling with linear gradient background */
+.navigation-bar {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position at the top */
+    width: 100%; /* Full width */
+    background: linear-gradient(to top, #267cae, #252839); /* Dark background */
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center items */
+    list-style-type: none; /* Remove default list styles */
+    padding: 10px; /* Padding inside navbar */
+    margin: 0; /* Remove margin */
+    border-style: none; /* No border style */
+    z-index: 1000; /* Ensures navbar stays on top */
+}
+
+/* Navigation bar list item styles */
+.navigation-bar li {
+    background-color: none; /* No background color */
+    display: inline; /* Display inline */
+}
+
+/* Navigation bar link styles */
+.navigation-bar a {
+    background-color: none; /* No background color */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding for clickable area */
+    font-size: 20px; /* Font size */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for navigation links */
+.navigation-bar a:hover {
+    background-color: #329ddb; /* Background color on hover */
+    border-radius: none; /* Rounded corners on hover */
+}
+
+/* Add padding to the top of the body to prevent content overlap with the fixed navbar */
+body {
+    padding-top: 80px; /* Add padding to the top */
+}
+
+
+/* Contact page */
+/* Style for the contact form container */
+.contact-form-container {
+    background: linear-gradient(to top, #252839, #329ddb); /* Adjust gradient colors as needed */
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 0px; /* No rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    width: 400px; /* Sets the width of the container */
+    margin: 50px auto; /* Center the container with top/bottom margin */
+    position: relative; /* Changed to relative for better layout control */
+    right: -526px; /* Distance from the right side of the parent container */
+}
+
+/* Contact form styles */
+.contact-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+}
+
+.form-title {
+    color: white; /* Sets the text color */
+    margin-bottom: 20px; /* Bottom margin */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center align text */
+}
+
+.form-group {
+    width: 100%; /* Full width */
+    position: relative; /* Position relative */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Input and textarea styles */
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%; /* Full width */
+    padding: 15px; /* Padding inside the elements */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    margin-bottom: 10px; /* Bottom margin */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Placeholder text color */
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="tel"]::placeholder, textarea::placeholder {
+    color: #999; /* Sets the placeholder text color */
+}
+
+/* Focus styles for input and textarea */
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #0084ff; /* Adds shadow when focused */
+}
+
+/* Submit button with envelope icon */
+.submit-button {
+    background-color: #2a2e43; /* Background color */
+    color: white; /* Text color */
+    padding: 15px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Font size */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+/* Icon margin inside submit button */
+.submit-button i {
+    margin-right: 10px; /* Right margin */
+}
+
+/* Hover effect for submit button */
+.submit-button:hover {
+    background-color: #329ddb; /* Background color on hover */
+}
+
+/* Additional container to align form to the right */
+.main-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space evenly between items */
+    padding: 20px; /* Padding inside the container */
+}
+
+.text-content {
+    flex: 1; /* Flex grow to fill available space */
+    margin-right: 20px; /* Right margin */
+}
+
+/* Contact page */
+/* Timeline container styling */
+.timeline-container {
+    padding: 20px; /* Padding inside the container */
+    border-radius: 0px; /* No rounded corners */
+    background: linear-gradient(to top, #252839, #329ddb); /* Gradient background */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    margin-right: 20px; /* Right margin */
+    max-width: 450px; /* Maximum width */
+    margin-top: -858px; /* Adjust the value to move the element up or down */
+}
+
+/* Timeline title styling */
+.timeline-title {
+    color: #f8f9fb; /* Text color */
+    margin-bottom: 20px; /* Bottom margin */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center align text */
+}
+
+/* Timeline event styling */
+.timeline {
+    position: relative; /* Position relative */
+}
+
+.timeline-event {
+    padding: 20px; /* Padding inside the event */
+    background: #f9f9f9; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Bottom margin */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for timeline events */
+.timeline-event:hover {
+    background-color: #e3e3e3; /* Background color on hover */
+}
+
+.event-title {
+    font-size: 18px; /* Font size */
+    color: #4a9ddc; /* Text color */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+.event-description {
+    font-size: 16px; /* Font size */
+    color: #666; /* Text color */
+}
+
+
+/* Keyframes for horizontal line animation */
+@keyframes lineAnim {
+    0%, 100% {
+        left: 0; /* Start and end with left position at 0 */
+    }
+    50% {
+        left: 100%; /* Move left position to 100% at midpoint */
+    }
+}
+
+/* Text animation keyframes */
+@keyframes textFill {
+    0% {
+      color: #b60000; /* Start with full color */
+      -webkit-text-stroke: 1px #b60000; /* Text stroke color */
+      clip-path: inset(0 0 0 0); /* Initially, full text is visible */
+    }
+    50% {
+      color: rgba(255, 255, 255, 0.2); /* Reduce opacity to show outline only */
+      -webkit-text-stroke: 1px #b60000; /* Text stroke color */
+      clip-path: inset(0 0 0 0); /* Keep the text fully visible */
+    }
+    100% {
+      color: #b60000; /* Restore full color */
+      -webkit-text-stroke: 1px #b60000; /* Text stroke color */
+      clip-path: inset(0 0 0 0); /* Keep the text fully visible */
+    }
+}
+
+/* Styling for animated text */
+.animated-text {
+    position: relative; /* Position relative to parent */
+    font-size: 25px; /* Font size */
+    font-weight: 700; /* Bold text */
+    color: rgba(255, 255, 255, 0.2); /* Text color with opacity */
+    -webkit-text-stroke: 100px #b60000; /* Text stroke color and width */
+    overflow: hidden; /* Hide overflow */
+    animation: textFill 8s infinite; /* Apply text animation infinitely */
+    text-align: center; /* Center align text */
+}
+
+/* Styling for the animation line */
+.animated-text::before {
+    content: ''; /* Empty content */
+    position: absolute; /* Position absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 3px; /* Width of the line */
+    height: 100%; /* Full height */
+    background-color: #b60000; /* Line color */
+    animation: lineAnim 8s infinite; /* Apply line animation infinitely */
+    text-align: center; /* Center align text */
+}
+
+/* Text slide-in animation keyframes */
+@keyframes slideIn {
+    from { transform: translateX(-100%); } /* Start from left off-screen */
+    to { transform: translateX(0); } /* Slide to original position */
+}
+
+/* Styling for animated elements */
+.animated-element {
+    animation: fadeIn 5s ease-in; /* Fade-in animation */
+}
+
+/* Styling for animated elements */
+.animated-element {
+    animation: slideIn 2s ease-out; /* Slide-in animation */
+}
+
+/* Styling for hover effect */
+.hover-effect {
+    transition: transform 0.3s; /* Smooth transformation */
+}
+
+/* Hover effect to scale element */
+.hover-effect:hover {
+    transform: scale(1.1); /* Scale up the element on hover */
+}
+
+/* Styling for main headings (h1) */
+h1 {
+    position: absolute; /* Ensure it's absolutely positioned */
+    top: 85px; /* Adjust the top value as needed */
+    left: 20px; /* Adjust the left value as needed */
+    font-size: 2vw; /* Adjusted font size */
+    color: white; /* Text color */
+    -webkit-text-stroke: 0.04vw #2341bd; /* Adjusted stroke size */
+    text-transform: uppercase; /* Transform text to uppercase */
+}
+
+/* Animation for main headings (h1) */
+h1::before {
+    content: attr(data-text); /* Use the data-text attribute */
+    position: absolute; /* Position absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 0; /* Initial width */
+    height: 100%; /* Full height */
+    color: #5698da; /* Text color */
+    -webkit-text-stroke: 0vw #383d52; /* Text stroke color and width */
+    border-right: 2px solid #5698da; /* Right border style */
+    overflow: hidden; /* Hide overflow */
+    animation: animate 6s linear infinite; /* Apply animation infinitely */
+}
+
+/* Keyframes for the text animation */
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0; /* Width at 0% and 100% */
+    }
+    70%, 90% {
+        width: 100%; /* Full width at 70% and 90% */
+    }
+}
+
+
+/* Footer of My Web Portfolio (Renaissance Treasures) */
+/* Base styling for the body element */
+body {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    min-height: 100vh; /* Minimum height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+/* Base styling for the main element */
+main {
+    flex: 1; /* Flex grow to fill available space */
+}
+
+/* Footer styling with linear gradient background */
+.footer {
+    background: linear-gradient(to top, #154561, #252839); /* Your footer background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding inside the footer */
+    text-align: center; /* Center align text */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Footer content container styling */
+.footer-content {
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center the content */
+}
+
+/* Ensure absolute positioning works within footer content */
+.footer-content {
+    position: relative; /* Ensure absolute positioning works */
+}
+
+/* Copyright text styling */
+.copyright {
+    position: absolute; /* Position absolutely */
+    bottom: -25px; /* Position at the bottom */
+    left: -340px; /* Position from the left */
+    font-size: 0.8em; /* Adjust font size if needed */
+}
+
+/* Import Font Awesome for icons */
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+/* Container styling for footer links */
+.container {
+    width: 100%; /* Full width */
+    text-align: center; /* Center align text */
+    margin: 20px 0; /* Adjust margin to suit your design */
+}
+
+
+/* footer styling */
+.button {
+    width: 40px; /* Smaller width */
+    height: 40px; /* Smaller height */
+    line-height: 40px; /* Adjust to align icon vertically */
+    display: block; /* Display as block element */
+    position: relative; /* Position relative to parent */
+    -moz-border-radius: 50%; /* Rounded corners for Mozilla */
+    -webkit-border-radius: 50%; /* Rounded corners for Webkit */
+    border-radius: 50%; /* Rounded corners */
+    border: 2px solid #329ddb; /* Border color and width */
+    text-align: center; /* Center align text */
+    display: inline-block; /* Display as inline block */
+    vertical-align: middle; /* Align vertically in the middle */
+    z-index: 10; /* Set z-index */
+    color: #329ddb; /* Text color */
+    margin: 0 5px; /* Add some space between buttons */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    color: #fff; /* Change text color on hover */
+}
+
+/* Additional styling for button background */
+.button:after {
+    position: absolute; /* Position absolutely */
+    content: ""; /* Empty content */
+    width: 32px; /* Adjusted for smaller buttons */
+    height: 32px; /* Adjusted for smaller buttons */
+    display: block; /* Display as block element */
+    border-radius: 50%; /* Rounded corners */
+    right: 4px; /* Position from the right */
+    top: 4px; /* Position from the top */
+    background-color: #329ddb; /* Background color */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Initially transparent */
+    transition: all 0.4s ease; /* Smooth transition effect */
+    transform: scale(0.5, 0.5); /* Scale down initially */
+    z-index: -1; /* Send behind the button */
+}
+
+/* Hover effect to show button background */
+.button:hover:after {
+    visibility: visible; /* Make visible on hover */
+    opacity: 1; /* Make opaque on hover */
+    transform: scale(1, 1); /* Scale up on hover */
+}
+
+/* Section styling */
+section {
+    padding-top: -2000px; /* Adjust the value to add more space */
+}
